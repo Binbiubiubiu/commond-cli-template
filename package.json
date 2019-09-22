@@ -1,0 +1,45 @@
+{
+  "name": "commond-cli-template",
+  "version": "1.0.0",
+  "description": "a commond-cli study demo",
+  "bin": {
+    "zhu-cli": "./bin/www"
+  },
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint src"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wildlifes/commond-cli-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wildlifes/commond-cli-template/issues"
+  },
+  "homepage": "https://github.com/Wildlifes/commond-cli-template#readme",
+  "devDependencies": {
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "husky": "^3.0.5"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "commander": "^3.0.1",
+    "consolidate": "^0.15.1",
+    "download-git-repo": "^2.0.0",
+    "ejs": "^2.7.1",
+    "inquirer": "^7.0.0",
+    "metalsmith": "^2.3.0",
+    "ncp": "^2.0.0",
+    "ora": "^3.4.0"
+  }
+}
